@@ -1,0 +1,5 @@
+Please submit the presentation slide for your second presentation. Your slides should contain the following topics for your selected project : 
+System Requirement Specification 
+Development Methodology
+Project Scheduling (CPM)
+You can include any additional information in your slides if you want. One submission from each group will be enough.

@@ -1,0 +1,1 @@
+Prepare a presentation slide demonstrating a Mock UI of your system for the features you have enlisted in your Requirement Specification. You can use the following tool to prepare your UI : https://www.figma.com/. You are free to use any other diagramming tool if you like. One submission from one lab group will be enough.

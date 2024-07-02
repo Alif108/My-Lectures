@@ -1,0 +1,1 @@
+Prepare a presentation slide demonstrating the Use Case Diagram and Class Diagram of your system. You can use any diagramming tool (E.g. draw.io, lucidchart.com) to create the diagrams. One submission from one lab group will be enough.

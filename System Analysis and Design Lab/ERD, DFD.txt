@@ -1,0 +1,1 @@
+Prepare a presentation slide demonstrating the Entity Relationship Diagram and Data Flow Diagram (Level-0 and Level-1) of your system. You can use any diagramming tool (E.g. draw.io, lucidchart.com) to create the diagrams. One submission from one lab group will be enough.
