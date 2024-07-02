@@ -1,0 +1,69 @@
+﻿The dissertation investigates the problem of modelling AMS systems for BUG free AMS Design. One of the core challenges in designing AMS systems is to choose a model that can accurately capture the properties of the underlying system and is also amenable to analysis and fast verification. Traditionally, the analog and digital circuits have been modelled accurately using DAEs and FSMs (or, similar discrete representations) respectively---two quite different languages which do not mix well. However, the existing modelling techniques for the AMS systems (which contain both analog and digital components closely interacting with each other) lack the desired accuracy (for simplifying assumptions) and scalability (limited to only a few continuous variables) for real-world practical AMS systems. The dissertation presents a method called ``Booleanization'' that can accurately model AMS systems with purely Boolean representation (e.g., FSMs). Boolean representations/models have a clear benefit as its allows the AMS systems to be verified by existing state-of-the-art Boolean verification tools, which can verify large industry level real-world digital systems. The dissertation proposes three different techniques to "Booleanization", among which ABCD-NL is the most general and powerful. The rest of this report porivides a brief overview on how ABCD-NL works and some directions that can be investigated to improve it further.
+
+ABCD-NL is a ``Booleanization'' technique, that takes an AMS system as an input as a SPICE netlist or, a system of DAEs and constructs an FSM as a Boolean approximation of the underlying system to accurately capture its I/O behavior. As the first step of the Booleanization technique, ABCD-NL first discretizes the given circuit’s inputs and outputs with a finite number of bits. In the next step, the FSM is constructed. ABCD-NL works under the assumption that, a DC input to the given system should eventually result in a DC output. Hence, upon a change of input the system first show a transient behavior for a while and eventually stedies into a constant DC voltage. To accurately capture the behavior of both the DC and transient behavior of the underlying system, the ABCD-NL constructed FSMs feature two distinct type of states:  1) DC states and 2) Transient states, between each pair of DC states. Each DC state correspond to a distinct combination of the input symbols and represent the DC operating point of the system for that input. When the input changes and kept fixed(constant) for a `reasonable' amount of time, the FSM transistions from one DC (or, transient too [footnote BB]) state into another DC state and converges [footnote - AA]. Its on the path to the DC states the transient states are visited and the appropriate transient output behavior is exhibited. 
+
+The transistion between different states is triggered with a change of input (both in DC and transient states) or, by the advancement of time (while in a transient state). The transitions or, to be exact, arcs can be categorized into three different classes: 1) self-looping arcs of the DC states, 2) The arcs corresponding to the transient states leading them from one DC state to another, and 3) arcs coming out of the transient states corresponding to input changes during transient state of the circuits.(Footnote CC) Each arc to be exact, is annotated with an output symbol representing a discrete value. 
+
+ABCD-NL utlizies SPICE simulations of the underlying AMS system to determine the output labels of the arcs.  Determining the value of the self-looping arcs to the DC states are straight-forward. The input value corresponding to the arc (from the input label) is fed to the SPICE simulator and the discretized DC (steady) output is used as the label. For labeling the arcs of the transient states between two DC states e.g., DC1 and DC2, ABCD-NL simulates the transient behavior of the system in SPICE feeding a step input, transitioning from the voltage corresponding to DC1 to the DC level of DC2. Afterwards, a number of transient states (the number is determined using the estimated settling time and FSM time step) are inserted between the two DC states and their output label are determined from the trajectory of the simulation output. For construncing and labeling the third kind of arcs, `Jumping heuristic's are used to approximate an appropriate next state and output symbol. Using the jumping heuristics a DC or transient state is selected which is similar to the transient state in considreation and the next state and output label of the selected state is also used for the transient state too.    
+
+footnote CC: For correctly capturing the system's behavior in case of a change in the input during a transient state, arcs are needed to be constructed from each transient state for all input symbols (One of the input symbol---the symbol corresponding to the DC state the transient is leading to---is already covered during constructing the second set of arcs).   
+
+
+
+AA - In case of a constant input kept fixed for a ``reasonable'' amount of time, the corresponding FSM converges into one of the DC states, similar to the corresponding DAEs it is approximating. This ``convergence'' in the FSM is achieved by a self loop in the DC states. The self loop is labelled by the corresponding constant input. 
+ 
+BB- If an input is changed, while the underlying system is still in a transient state due to a previous change in input, the tranistion to a DC state can start from a transient state, too. 
+ 
+
+ 
+--- (The number of bits determine how closely the input and output signals are approximated. For example, if we have an input with a voltage range of 1V and we choose 2 bits for its discretization)
+
+ 
+
+
+
+
+
+--- The DC states of the FSMs correspond to the steady-state/DC behavior of the underlying system, while the transient states capture the transient behaviors. 
+
+The dynamics of the system (e.g., passage of time or, change of inputs) trigger a transition from one state to another.  
+
+
+--During a particular time of simualation, the current state of the FSM captures the I/O behaviour of the underlying system. 
+
+
+Each of the state represent   
+
+
+       
+
+
+Booleanization approximates continuous (both in space and time) signals with Boolean signals working in discrete space and time. In principle it can achieve an arbitrary level of approximation accuracy, e.g., increasing the number of bits to represent the analog signals or, sample rate. 
+
+---
+However, the underlying system being Booleanized is assumed to be reasonably wellbehaved, i.e., it satisfies basic existence and uniqueness properties, it features reasonably smooth waveforms, it is robustly stable and non-chaotic, etc..  
+
+
+The true I/O function can de defined as $o_t = f (i_t, t)$, where $i_t$ and $o_t$ are input and output of the system,  respectively, at time $t$. The DC behavior of the circuit is portrayed at $t = \infty$, while the transient behavior is shown at $t$ within $[0, \infty)$. 
+
+
+--- hybrid models simplilify kore assumption diye, most hybrid automata are constructed after making a number of simplifying assumptions (resulting in so called “behavioural models” of AMS components). 
+
+-- AMS Design steps ( modelling, analyzing, simulating, verifying, and testing/debugging??).
+
+--- bolean models
+--- for combinatorial only? -> truth table, And-inverter graph, Binary Decision Diagram 
+--- for sequential -> FSMs (state tranisition tables) , Boolean Circuit Representation, 
+
+--- As with truth tables, storing the state transition relation of an FSM as a table or as a graph is in general not efficient. 
+--- And Inverter Graphs (augmented with latches/registers) are typically used in practice to store and manipulate FSMs in the form of Boolean circuits.
+
+--- In Booleanization, we are not given a single waveform. Rather, we are given a DAE (a system of differential-algebraic equations). The DAE implicitly encodes an infinite number of input and output waveforms, because for every input waveform, the DAE produces a  corresponding output waveform. The Booleanization problem involves designing an FSM (represented, for example, in Boolean circuit form as shown in Fig. 3.8) that ``mimics'' the DAE. This means we want to construct an FSM that produces the correct sequence of bits at the output for every conceivable input waveform to the DAE.
+
+--- Boolean models, it is well-suited for use in conjunction with existing techniques for Boolean reachability analysis and formal verification
+
+--- how much of the inside model do the verification techniques need to see ?
+
+--- Bug Free AMS(i.e., effectively verified and validated)
+
+--- if a fine enough discretization is used, this Boolean model closely matches the SPICE-level dynamics of the given AMS circuit. However, the finer the discretization the the larger the FSM is. 

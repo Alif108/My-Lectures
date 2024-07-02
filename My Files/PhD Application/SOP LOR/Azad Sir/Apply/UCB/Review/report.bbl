@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+
+\bibitem{ANN_UNI_APPX}
+K.~Hornik, M.~Stinchcombe, and H.~White, ``Multilayer feedforward networks are
+  universal approximators,'' {\em Neural networks}, vol.~2, no.~5,
+  pp.~359--366, 1989.
+
+\bibitem{RNN_FSM1}
+P.~Tino, B.~G. Horne, and C.~L. Giles, ``Finite state machines and recurrent
+  neural networks--automata and dynamical systems approaches,'' tech. rep.,
+  1998.
+
+\bibitem{RNN_FSM2}
+M.~Casey, ``The dynamics of discrete-time computation, with application to
+  recurrent neural networks and finite state machine extraction,'' {\em Neural
+  Computation}, vol.~8, pp.~1135--1178, Aug 1996.
+
+\end{thebibliography}

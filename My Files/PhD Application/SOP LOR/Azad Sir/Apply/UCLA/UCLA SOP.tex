@@ -1,0 +1,142 @@
+%
+% Please use latex to format this document.
+%
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{fancyhdr}
+\usepackage{comment}
+\usepackage{hyperref}
+
+\usepackage[paper=letterpaper,
+%includefoot, % Uncomment to put page number above margin
+marginparwidth=1.2in,     % Length of section titles
+marginparsep=.05in,       % Space between titles and text
+margin=1in,
+top=1.5in,
+bmargin=1in,               % 1 inch margins
+includemp]{geometry}
+
+
+\marginparwidth 0pt
+\oddsidemargin  0pt
+\evensidemargin  0pt
+\marginparsep 0pt
+
+%\topmargin   -20pt
+
+\textwidth   6.5 in
+%\textheight  9 in
+
+\pagestyle{fancy}
+
+
+%\renewcommand{\baselinestretch}{2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Double spacing                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\renewcommand{\baselinestretch}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%*************Declaration Section******************
+\newcommand{\Z}{\bf{Z}}
+\newcommand{\Q}{\bf{Q}}
+\newcommand{\R}{\bf{R}}
+\newcommand{\C}{\bf{C}}
+\newcommand{\F}{\bf{F}}
+\newcommand{\T}{\bf{T}}
+\newcommand{\J}{\bf{J}}
+\newcommand{\PP}{\bf{P}}
+\newcommand{\RP}{{\noindent \bf Research problems:}}
+\newcommand{\B}{{\noindent $\bullet$ \ }}
+%\newcommand{\HH}{\rm{H}}
+%\newcommand{\SS}{\rm{S}}
+%\newcommand{\LL}{\rm{L}}
+\newcommand{\Mid}{\mid\!\!}
+\newcommand{\miD}{\!\!\mid}
+\newcommand{\tensor}{\otimes}
+\newcommand{\ra}{\rightarrow}
+\font\cyr=wncyr10
+\newcommand{\Sha}{\hbox{\cyr X}}
+\newtheorem{lem}{Lemma}[section]
+\newtheorem{cor}[lem]{Corollary}
+\newtheorem{prop}[lem]{Proposition}
+\newtheorem{conj}[lem]{Conjecture}
+\newtheorem{thm}[lem]{Theorem}
+
+
+
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Topmatter                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\fancyhf{}
+%\rhead{User ID: azadsalam@cse.buet.ac.bd}
+\rhead{azadsalam2611@gmail.com}
+\lhead{Abdus Salam Azad}
+\lfoot{Personal Website: \url{https://sites.google.com/view/azadsalam2611}}
+\rfoot{\thepage}
+
+\begin{center}
+{\LARGE \bf 
+Statement of Purpose}\\
+%\vspace{0.1in}
+%{\Large {Program: Ph.D. in Computer Science}}
+% \\ azadsalam@cse.buet.ac.bd
+\end{center}
+
+%\\
+%A
+%\hfill
+%Prof. Whatshisname
+
+\vspace{0.1in}
+
+I am Abdus Salam Azad. My research interests broadly span the field of Machine Learning (ML) with an emphasis on Natural Language Understanding(NLU). I am also interested in Information Retrieval and its intersection with NLU. 
+
+I got my first taste of research in my junior year. We analyzed 40 years of historical weather data from different regions of Bangladesh to identify the trends in temperature and rainfall. We used a wide range of data analysis techniques, including clustering such as K-means, non-parametric trend tests such as Mann-Kendall and Sen's slope estimator, etc. We found a number of interesting insights, such as, over the years the maximum temperature of our country has significantly increased during June to November. In contrast, there have been no significant changes in rainfall. The results also indicate that the eastern part of the country has faced more changes in temperature than its western part. The findings of the study were published as a book chapter by Springer. 
+
+For my undergraduate thesis, I worked on Genetic Algorithms(GA) to solve MDPVRP---a lesser studied variant of the well-known Vehicle Routing Problem (VRP), which extends VRP with multiple depots and periods. I was supervised by Prof. Md. Monirul Islam, who has been working on GAs for the past 20 years. Maintaining the population diversity is crucial for the performance of GAs. For this purpose, the existing GA approaches for VRPs incorporate a diversity measure with the solutions' fitness, which can be computationally expensive. Our proposed method aimed at maintaining the population diversity solely by the use of selection operators. We also proposed a crossover operator by generalizing the Edge Recombination Operator---a widely used crossover operator for the Travelling Salesman Problem. Finally, we proposed a new formulation for MDPVRP which allows interdependent operations among depots to provide cheaper solutions at the cost of a bigger search space. Our work was acknowledged as the winner in the yearly thesis poster competition organized by CSE, BUET (1st out of 57 submissions).
+
+In my Master's thesis, I continued my work with Prof. Islam on our proposed MDPVRP formulation. This time, we developed a Memetic Algorithm (MA)---a hybrid GA with a local improvement component. The existing MA methods focus extensively on greediness, which typically leads them to a premature convergence and require additional techniques such as population restart for further progress. Our proposed method introduces a stochastic local improvement component to address this problem. The component focuses simultaneously on both greediness and randomness to maintain the balance between exploration and exploitation, which consequently helps to avoid a premature convergence. We also proposed a heuristic, partly greedy and partly stochastic, to construct the initial solutions. Extensive experiments on the benchmark problems revealed significant improvements over the state-of-the-art methods. This work has been accepted in the IEEE Transactions on Cybernetics. 
+
+I have taken a number of courses related to ML during my undergrad and masters, including Artificial Intelligence, Machine Learning, Pattern Recognition, Advanced Image Processing, and Data Mining. I have also participated in MOOCs on Machine Learning (Coursera) and Deep Learning (Udacity). As a lecturer in CSE, BUET, I have conducted Artificial Intelligence and Machine Learning lab courses. Besides, I am also instructing an applied machine learning course. The course has around 20 graduates from five institutions. Such experiences have allowed me to study machine learning techniques in depth.
+
+My current research projects involve citation recommendation and machine/reading comprehension. In citation recommendation, the task is to recommend the most relevant works from the literature given a research idea or, abstract as a query. A paper may cite another paper for a number of different reasons, such as having similarity in the applied methodology, problem definition, and/or datasets used for evaluation. To incorporate such multidimensional similarity we are developing a multi-objective optimization based Learning to Rank algorithm. This research is jointly collaborated by BUET and the University of Illinois Urbana-Champaign. 
+In my other project, we have modeled the machine comprehension problem (answering questions based on passages) as a path-finding game in a passage graph, where an agent traverses the graph to locate the answer upon given a question. The graph is constructed from the passage utilizing word embeddings, parse trees, and coreference resolution. We are working on a reinforcement learning method to train the agent.
+
+I consider the Department of Computer Science at the University of California, Los Angeles (UCLA) a suitable place to pursue my Ph.D., as there are a number of active research projects where I believe I will be able to contribute. I am particularly motivated by Prof. Kai-Wei Chang's current research directions, such as extracting knowledge from large unstructured text for solving problems including question answering or, learning and inference with complex structures. My current projects (i.e., machine comprehension and citation recommendation) align with these directions. These projects also align with Prof. Junghoo Cho's research theme---discovering interesting patterns from real-world data for different application domains. The citation recommendation project also matches with Prof. Yizhou Sun's research interests. As part of her research on recommendation via the Information Networks, she also worked on citation recommendation (CIKM '14). Her approach retrieves relevant papers based on a number of meta-paths involving combinations of keywords, authors, citations, and venues. We measure the relevances from a different point of view, such as relevance in terms of problem nature, solution approach, datasets, etc. I am also interested in Prof. Sun's current research on mining data from heterogeneous domains with social factors. Finally, I believe an opportunity to pursue my Ph.D. in the prestigious department of Computer Science at UCLA will enable me to conduct impactful research and help me to advance towards a research-oriented career in academia.
+
+
+
+\begin{comment}
+In this age of information, most of the human knowledge can be found on the internet. However, when we have a query, we find relevant information using search engines and we need to go through the retrieved pages to find the answer. My goal is to build a system named ``Dr. Ask'', which will save the users from the trouble of going through multiple pages and read entire documents. For a given query, Dr. Ask will gather relevant information distributed in different formats (e.g., text, image, video, and maps) from a collection of sources (e.g., pages recommended by search engines) and prepare a concise answer. Challenges from different domains, such as natural language understanding and image understanding, arise while creating a system like Dr. Ask. With a fascination to work on the intersection between natural language and image understanding using machine learning techniques, I want to pursue my Ph.D. in the department of Computer Science at University of North Carolina at Chapel Hill. I believe a Ph.D. in my area of interest would be the foundational step for a research career in academia.
+
+My interest in machine learning techniques started to grow during my second year of undergraduate studies at Bangladesh University of Engineering \& Technology (BUET). I was developing an image editor with different filters. While grayscale conversion of a color image is straightforward, I was puzzled with the reverse task. After a few days of research, I came to know that some machine learning techniques can solve this problem just by seeing examples. I was thrilled by my newfound knowledge and its endless possibilities. Since then I have been fascinated towards machine learning, and in general artificial intelligence. Afterwards, in my third year, I along with two of my classmates, developed an online portal providing an interactive interface for climate researchers to run different analysis on climate data. We used some standard statistical techniques, time series prediction models, and clustering techniques to study trends in temperature and rainfall data of Bangladesh. This data was collected by 37 weather stations for more than 40 years. The findings of the study were published as a book chapter by \href{http://link.springer.com/chapter/10.1007\%2F978-94-017-8642-3_3}{Springer Netherlands} in 2014. 
+
+Later on, for my undergraduate thesis, I worked with \href{http://cse.buet.ac.bd/faculty/facdetail.php?id=mdmonirulislam}{Prof. Md. Monirul Islam}, one of the most prominent AI researchers in Bangladesh. I focused on solving Vehicle Routing Problems (VRP) and its different variants using Genetic Algorithms (GA). We studied the existing solutions for VRP and its variants, analyzed their strengths and weaknesses, and designed a basic GA framework for solving VRPs with multiple depots and periods. Our work got the first prize in the ``1st undergraduate thesis poster presentation, 2014, BUET.'' Even after graduation, I continued my work with Prof. Islam on VRPs. We have recently proposed a new variant of VRP with multiple depots and periods, which can provide cheaper solutions than the existing formulation. We have also designed a memetic algorithm to solve the variant. Our main focus has been designing a learning component that does not focus extensively on greediness, as too much greediness can lead to a premature convergence and often requires a population restart for further progress. We have proposed a stochastic memetic algorithm, focusing simultaneously on greediness and randomness, to maintain the balance between exploration and exploitation to avoid a premature convergence. Our work has been accepted for publication in the \href{http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036}{IEEE Transactions on Cybernetics}.
+
+My current research works include a project with \href{http://cse.buet.ac.bd/faculty/facdetail.php?id=eunus}{Prof. Mohammed Eunus Ali}, where I have studied the problem of describing and retrieving images by natural language queries based on semantic similarities. I am developing a deep learning based method to solve this problem. %To understand the semantic of images, I am working on a two-phased method, where in the first phase the objects within the images will be identified and the semantic relations between the objects will be learned in the second phase. 
+Currently, I am also working on the machine comprehension task under the supervision of Prof. Islam. This work is inherently related to ``Dr. Ask'' and focuses on the MCTest Dataset released by Microsoft Research. The task is to answer multiple choice questions based on fictitious short stories. We have modeled the problem as a game, where an agent upon given a question-answer pair traverses a graph which is constructed from the story by utilizing dependency parse trees and coreference resolution. We award points to such traversals based on their relevance with the given question-answer pair.  The agent is trained by reinforcement learning so that it can gain highest points given the correct question-answer pair. This is a work in progress which we plan to submit in EMNLP'17. 
+
+% We calculate the relevance based on the probabilistic method proposed by Karthik Narasimhan and Prof. Regina Barzilay in their work on machine comprehension published at ACL 2015.
+
+Since my graduation in 2014, I have been working as a lecturer in the Department of CSE, BUET. I have taught a number of theory and sessional courses including Machine Learning and Artificial Intelligence. I have also contributed towards different national projects, such as development of interactive digital textbooks and software testing for machine readable passports in 33 regional passport offices of Bangladesh. In addition to academic activities, I have co-founded \href{https://www.facebook.com/esab.bd}{Engineering Students Association of Bangladesh} (ESAB), first of its kind in Bangladesh, with a goal to bring all engineering students under one roof to work closely with the Government of Bangladesh for providing engineering solutions to local problems. 
+
+I believe my knowledge, practical experience, and research interest make me a well-suited candidate for the prestigious department of Computer Science at University of North Carolina at Chapel Hill. I am deeply motivated by the works of Prof. Mohit Bansal. His state-of-the-art method on machine comprehension (ACL'15) has given me greater insight on the problem and new ideas to solve it.  His several other works, such as image and caption sequencing (EMNLP'16), visual question answering (EMNLP'16), and text-to-image coreference (CVPR'14), align with my research interest. The works of Prof. Tamara L. Berg and Alexander C. Berg in the intersection between natural language and vision deeply inspire me too. Their research papers on retrieving and generating natural language descriptions for images (IJCV'15) and on the Visual Madlibs dataset scintillate my interest. I strongly feel, the research environment of UNC-Chapel Hill is perfectly suitable for me to conduct research in my area of interest. Given an opportunity to work there, I believe I will be able to conduct novel research works with my determination, sincerity, and hard work to pursue a research-oriented career in academia.
+
+
+\end{comment}
+
+
+\end{document}
+
+

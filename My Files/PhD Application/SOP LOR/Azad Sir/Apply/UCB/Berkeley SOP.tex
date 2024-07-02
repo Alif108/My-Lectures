@@ -1,0 +1,129 @@
+%
+% Please use latex to format this document.
+%
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{fancyhdr}
+\usepackage{comment}
+\usepackage{hyperref}
+
+\usepackage[paper=letterpaper,
+%includefoot, % Uncomment to put page number above margin
+marginparwidth=1.2in,     % Length of section titles
+marginparsep=.05in,       % Space between titles and text
+margin=1in,
+top=1.3in,
+bmargin=0.9in,               % 1 inch margins
+includemp]{geometry}
+
+
+\marginparwidth 0pt
+\oddsidemargin  0pt
+\evensidemargin  0pt
+\marginparsep 0pt
+
+%\topmargin   -20pt
+
+\textwidth   6.5 in
+%\textheight  9 in
+
+\pagestyle{fancy}
+
+
+%\renewcommand{\baselinestretch}{2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Double spacing                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\renewcommand{\baselinestretch}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%*************Declaration Section******************
+\newcommand{\Z}{\bf{Z}}
+\newcommand{\Q}{\bf{Q}}
+\newcommand{\R}{\bf{R}}
+\newcommand{\C}{\bf{C}}
+\newcommand{\F}{\bf{F}}
+\newcommand{\T}{\bf{T}}
+\newcommand{\J}{\bf{J}}
+\newcommand{\PP}{\bf{P}}
+\newcommand{\RP}{{\noindent \bf Research problems:}}
+\newcommand{\B}{{\noindent $\bullet$ \ }}
+%\newcommand{\HH}{\rm{H}}
+%\newcommand{\SS}{\rm{S}}
+%\newcommand{\LL}{\rm{L}}
+\newcommand{\Mid}{\mid\!\!}
+\newcommand{\miD}{\!\!\mid}
+\newcommand{\tensor}{\otimes}
+\newcommand{\ra}{\rightarrow}
+\font\cyr=wncyr10
+\newcommand{\Sha}{\hbox{\cyr X}}
+\newtheorem{lem}{Lemma}[section]
+\newtheorem{cor}[lem]{Corollary}
+\newtheorem{prop}[lem]{Proposition}
+\newtheorem{conj}[lem]{Conjecture}
+\newtheorem{thm}[lem]{Theorem}
+
+
+
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Topmatter                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\fancyhf{}
+%\rhead{User ID: azadsalam@cse.buet.ac.bd}
+\rhead{azadsalam2611@gmail.com}
+\lhead{Abdus Salam Azad}
+\lfoot{Personal Website: \url{https://sites.google.com/view/azadsalam2611}}
+\rfoot{\thepage}
+
+\begin{center}
+{\LARGE \bf 
+Statement of Purpose}\\
+%\vspace{0.1in}
+%{\Large {Program: Ph.D. in Computer Science}}
+% \\ azadsalam@cse.buet.ac.bd
+\end{center}
+
+%\\
+%A
+%\hfill
+%Prof. Whatshisname
+
+%\vspace{-0.15in}
+
+I am Abdus Salam Azad. My research interests broadly span the field of Machine Learning (ML). In my undergraduate and Master's thesis, I have worked on Memetic Algorithms. I have also attempted to explore the domain of ML further and its application in relevant fields through several courses, projects, and research collaborations. For my PhD, I am interested in developing novel machine learning algorithms with application in different relevant fields. I am particularly interested in modeling complex dynamic systems and develop learning algorithms for them. Hereby I express my interest to pursue my PhD at the Department of Electrical Engineering and Computer Sciences at the University of California, Berkeley (UC Berkeley)---one of the most suitable places to pursue research in this area.
+
+I had my first major research experience during my undergraduate thesis. I worked on Genetic Algorithms(GA) to solve MDPVRP---a lesser studied variant of the well-known Vehicle Routing Problem (VRP), which extends VRP with multiple depots and periods. I was supervised by \href{http://cse.buet.ac.bd/faculty/facdetail.php?id=mdmonirulislam}{Prof. Md. Monirul Islam}, who has been working on GAs for the past 20 years. For GAs to perform well, maintaining the population diversity is very crucial. To keep the population diverse, the existing GA approaches for VRPs incorporate a diversity measure with the solutions' fitness, which can be computationally expensive. Our proposed method aimed at maintaining the population diversity solely by the use of selection operators. We also proposed a new formulation for MDPVRP which allows interdependent operations among depots to provide cheaper solutions at the cost of a bigger search space. Our work was acknowledged as the winner in the yearly thesis poster competition organized by CSE, BUET (1st out of 57 submissions).
+
+In my Master's thesis, I continued my work with Prof. Islam on our proposed MDPVRP formulation. This time, we developed a Memetic Algorithm (MA)---a hybrid GA with a local improvement component. The existing MA methods focus extensively on greediness, which typically leads them to a premature convergence and require additional techniques such as population restart for further progress. Our proposed method introduces a stochastic local improvement component to address this problem. The component focuses simultaneously on both greediness and randomness to maintain the balance between exploration and exploitation, which consequently helps to avoid a premature convergence. We also proposed a heuristic, partly greedy and partly stochastic, to construct the initial solutions. Extensive experiments on the benchmark problems revealed significant improvements over the state-of-the-art methods. This work has been accepted in the \href{http://ieeexplore.ieee.org/document/7835722/}{IEEE Transactions on Cybernetics}. 
+
+
+I developed a decent understanding of search techniques and constrained combinatorial optimization during my thesis. To get a greater overview and deeper understanding of the topics of AI \& ML, I have taken a number of related courses during my undergrad and Master's, including AI, ML, Pattern Recognition, and Data Mining. I have also participated in MOOCs on ML (Coursera) and Deep Learning (Udacity). These courses have also provided me with opportunities to work on learning algorithms for different interesting problems. In one of my Master's course, I surveyed the literature of bidirectional image-sentence search, searching images with sentence descriptions (and vice versa), and analyzed three of the state-of-the-art methods. I also proposed a two-stage deep learning approach that unlike the previous methods decouples object detection within the images from the inference of their inherent semantic relations. Currently, I am designing a learning algorithm for a core problem related to natural language understanding---machine/reading comprehension i.e., answering questions based on passages. In this project, we represent the passages as a graph and we model the problem as a path-finding game in the graph, where an agent traverses it to locate the answer. The graph is constructed from the passage utilizing word embeddings, parse trees, and coreference resolution. I am training the agent using reinforcement learning. For my future research, I want to continue on developing learning algorithms for such exciting problems. 
+
+I have been working as a Lecturer in the Department of CSE at Bangladesh University of Engineering and Technology (BUET), my alma mater, since 2014. I have conducted a number of lab courses including Artificial Intelligence and Machine Learning. I have also conducted the ``Microprocessor and Microcontrollers'' lab course a number of times. As part of this course, students build small-scale systems using ATmega 32 microcontroller. In most of the offerings, I had the opportunity to supervise and work on a number of exciting systems with a wide variety of applications. One of the major challenges in designing such systems is to design memory-constrained algorithms that can work with small amount of memory. Developing learning algorithms which can learn small models to run on memory-constrained systems is another exciting research direction that I would like to explore in future. 
+
+Several of my undergraduate projects involved designing systems too. One such project was developing a map tracking algorithm for the EPuck robot using its IR sensors and camera. In another such project, I built an automatic door lock system using ATmega32 and PIR sensors that implements a color-pattern based dynamic password protection. While working on these systems one particular course that I found really useful is, Simulation and Modeling, that I took during my undergraduate studies. In this course, I learned to model complex real-life systems and how to simulate them in computers. The course covered a lot from the probability theories too, which are integral to simulate complex systems. I believe these experience have laid a basic foundation for me to work on real-life complex systems and develop machine learning algorithm for them when applicable. 
+
+I consider the Department of Electrical Engineering and Computer Sciences at the University of California, Berkeley (UC Berkeley) one of the most suitable places for conducting research in the field of Machine Learning. I am particularly interested to work with Prof. Jaijeet Roychowdhury in his project ABCD. I found the use of machine learning to learn Finite State Machine abstractions of continuous domain dynamical systems in DAE2FSM very intriguing. This project provides unique opportunities to work on novel machine learning algorithms. I believe my experience in machine learning and its application in several domains makes me a good match for this project. I also find the works of Prof. Kurt Keutzer on designing neural nets for embedded systems interesting. I believe applying local search techniques on pretrained large networks, with well-curated operators and a constrained cost function, can reduce the model size while retaining expected accuracy. I am also open to working with others who have interest in developing machine learning algorithms for solving real-world problems. I believe an opportunity to pursue my Ph.D. in the Department of Electrical Engineering and Computer Sciences at the University of California, Berkeley will enable me to conduct impactful research to advance towards a research-oriented career in academia. 
+
+%In the first phase, the representation of the objects in the images are learned in a joint ``Object embedding space'' to have close proximities with their matching words (e.g., an image of dog will have similar ``Object'' representation of the word ``dog''). In the next step, the ``Semantic'' representation of the images and sentences are learned leveraging the object representations.
+%Since my undergraduate studies, I have attempted to explore AI, ML, and relevant fields through my research, courses, and different projects. I have worked on learning algorithms for a variety of problems. In my Ph.D., I want to delve deeper and develop learning algorithms for . 
+
+
+
+
+%However, gathering knowledge from vast unstructured text is very challenging. One interesting direction will be to work on new novel techniques which can impose structure on data. I am also interested in developing learning algorithms to solve real-world socio-economic problems.
+%I am also deeply motivated by the works of Prof. Marti A. Hearst on her works on NLP and Education. 
+
+\end{document}
+
+

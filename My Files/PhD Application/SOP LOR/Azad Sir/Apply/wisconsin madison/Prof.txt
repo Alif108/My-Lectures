@@ -1,0 +1,33 @@
+-- Application of ML in social or, economic problems. 
+-- new textual representation 
+-- ''
+
+I am interested to work with Prof. Xiaojin (Jerry) Zhu on machine teaching---selecting an optimal training set for an already known target model. Selecting such a training set requires combinatorial search, on which I worked on my undergrad and Master's thesis. The idea of machine teaching seems very intriguing to me. I would like to explore the use of Machine Teaching technqiues for machine learning algorithms. For example, we can speed up the training by selecting batches intelligently. By machine teaching techniques, we find the represenative subset of training examples for the current state of the model, and emphasize on other examples from the training set for the next batch to facilitate generalization. Prof. Zhu's work on persistent homology including its application for a new representation of text is also interesting.  
+
+I am also interested to work with Prof. Jignesh M. Patel on his project AVA ---a chatbot that can interact with data scientists and help them build data science workflows. Multiple future directions of this project match with my work. For example, automatic selection/suggestion of best possible combination of data preprocessing, feature selection, model selection require search techniques, on which I worked during my thesis. My recent endeavour on machine comprehnsion would also be useful to make AVA handle unstructured natural text.
+
+My work on search techniques and optimization in my thesis and recent endeavour on machine comprehnsion match with its future directions such as handling less-constrained natural text, allowing dynamic conversation path, automatic selection/suggestion of best possible combination of data preprocessing, feature selection, model selection using efficient combinatorial search technqiues. 
+
+
+His research on  efficient ``data-driven decision making'' is intriguing. His initial step in this direction namely AVA introduces a ``chatbot'' that can interact with the users (e.g., data scientists) and help them build Data Science workflows with a vision to expanding the system gradually to incorporate non-technical users such as high level executives for efficient decision-making. 
+  
+
+
+The system also deals with a number of ML challenges, such as, learning the relation of hyper parameters and visualization with data characterestics, learning the efficiency (e.g., speeding up workflow) of 
+
+
+
+
+I am also interested to work with Prof.  Jignesh M. Patel. His research on  making the data-driven decision making efficient.  
+
+AVA introduces a ``chatbot'' that can interact with the users (e.g., data scientists) and help them build Data Science workflows with a vision to expanding the system gradually to incorporate non-technical users such as high level executives for efficient decision-making. 
+
+I believe with my work on search techniques and optimization in my thesis, practical experience in ML, and recent endeavour on machine comprehnsion will allow me to contribute in this project, especially on making the conversation more robust by handling less-constrained natural text and allowing dynamic conversation path, automatically suggesting best possible combination of data preprocessing, feature selection, model selection.  
+
+
+The system also deals with a number of ML challenges, such as, learning the relation of hyper parameters and visualization with data characterestics, learning the efficiency (e.g., speeding up workflow) of 
+
+--decision-makers of an enterprise
+
+-- All conversations with Ava are in a constrained natural language, and the conversations are bounded to pre-defined “conversation paths”. 
+-- http://pages.cs.wisc.edu/~jignesh/publ/Ava.pdf

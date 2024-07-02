@@ -1,0 +1,59 @@
+﻿--I am very glad to write a few words in favor of Tanvir Ahmed Khan, one of my best thesis students.
+
+As a student Arif exhibited his competence in grasping novel and fundamental ideas
+
+I was impressed by his ability to understand the insight of a problem and possible solution approaches. It proves his intellectual maturity, strong capability of clear thinking, utmost curiosity.
+
+His undergraduate study at BUET has given him a comprehensive exposure to the core areas of computer science and engineering with a strong understanding of the theoretical and practical concepts.
+
+--Being his mentor for a long time, I know him very closely and being aware of his credentials. I am very happy to write a recommendation for him as a worthy candidate in graduate program at your university.
+
+While working under my supervision, I found him as an enthusiastic and inquisitive person. He was very keen about the learning things deeply and always tried to find the logical explanation of newly arose problems.
+
+It is my great pleasure to recommend Samia Shafique for a PhD program. I have known her since I joined BUET after my own PhD in 2014 and I had been working closely with her ever since. She is a true self-starter. During her undergrad, she went to several conferences, made technical presentations and urged other students to follow her. She also participated in several competitions and development work. She was involved in my research project BuizBridge which aims to bring together prospective female partners for entrepreneurship purposes. Samia insisted that she help me with the implementation of the proposed web based solution with a mobile extension. I found her to be highly self motivated as she came up with ideas of her own on how to improve the application.
+
+I was delighted to enjoy the depth of Ms Shafique’s analytical skills, her devotion to research and her enthusiasm in building a more knowledgeable and active community. I believe she not only that she fits perfectly well in an academic setting but also that she will drive her community forward. I have met and supervised many excellent graduate students all over the world in my teaching career and I must say that Ms Shafique is indeed one of the top 1% of students I have met so far. She has the capability to do well in any research area of her interest. I am sure she will be an excellent addition to any graduate school of her discipline. Please feel free to contact me if you have any question regarding Ms. Shafique.
+
+As a student Wasi exhibited his competence in grasping novel and fundamental ideas promptly in the field of Machine Learning during my course “CSE 471: Machine Learning” and “CSE 472: Machine Learning Sessional”. The theory course was a broad introduction to theoretical concepts in machine learning such as bias-variance concepts in hypothesis evaluation, theoretical aspects in supervised, unsupervised and reinforcement learning, computational learning theory etc. In the lab works of the machine learning course in our department, students had to apply some of the state of the art machine learning techniques such as decision tree learning, k-nearest neighbor based classification in depth and apply them in practical problem solving. He completed all the tasks in time with high classification accuracy. In the lab, I was impressed by his ability to understand the techniques well enough instead of just implementing them without sufficient depth of knowledge. It proves his intellectual maturity, strong capability of clear thinking, utmost curiosity and commitment. Eventually, he earned a grade of A in the theory course and A+ in the lab work. In summary, with his performance in my course, I believe he is hard working, sincere, possess good problem solving skills and has natural curiosity in the domain of machine learning/data mining.
+
+Having spent much of my experience with Tusher, I stand as a trustworthy source to affirm Tusher’s research abilities and academic accomplishments. Therefore, I strongly recommend Tusher for his admission in your highly-reputed program with any available financial aid.
+
+-- Because of his excellent result, Azad was appointed as a lecturer of this University after his graduation. So I was lucky to have him as a colleague too. Based on my interactions with him as a teacher as well as a colleague, I feel very happy to write a recommendation for him as a worthy candidate for your graduate program.
+
+	survey the literature briefly, pick three state-of-the-art methods solving that problem, and critically analyze them.  The project included three presentations and one final report. Azad did a fine job in that project.
+
+
+------------------ My Info -------------
+
+-- As I have been serving as the departmental head for the past two years, I even had a greater chance to observe him as a colleague. 
+
+-- HERA 
+You are competent, can reach the crowd you are addressing, and most importantly you are willing to spend a lot of your time behind teaching, which from my experience, most teachers are not. 
+
+	Saiful
+	As a teacher, you have near perfect balance, friendly and guardian at the same time and of course, an inspiration
+
+
+
+-- Azad treats everyone with great respect which is highly appreciated by everyone acquainted with him.
+--  He has participated in the many challenging projects. 
+-- 
+
+
+-- 
+
+
+
+
+-- I would also like to comment on Azad’s coding skill. Typically, his implementations were accurate and quite fast too. I remember about his implementation of Naïve Bayesian Classifier for text classification, where many other students’ implementation was taking much more time to run.
+
+--  Doing undergraduate research is not easy in BUET, as the students have an extensive pressure with their academic courseworks and lab projects. It is always very challenging to make good results and at the same time give effort for inventing new things. However, I saw a strong motivation in Azad to investigate different aspects of computer science during his undergraduate study-span.
+
+	Typically I encourage my supervisees to come up with the solution ideas themselves. And when they do, I usually point the shortcomings of their approaches and provide them directions on how these can be refined. 
+	He contributed towards several key aspects of the work such as generating new ideas, designing the stochastic learning component, and conducting extensive experiments.
+
+--
+Bangladesh University of Engineering and Technology is the most prestigious engineering university in Bangladesh. As faculty members, we regularly participate in projects of national interest. Azad took part with me in such a project where we had to test and audit the software installed for Machine Readable Passports in 33 Regional Passport Offices of Bangladesh. Our team worked with the developer team to correct errors, redesign incorrect flow of information, and improve the software further. His primary task was to oversee the conformation of the captured photos and fingerprints to the standard. He showed a substantial depth of knowledge in software systems and contributed towards several improvements of the overall system. 
+
+
+

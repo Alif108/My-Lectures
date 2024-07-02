@@ -1,0 +1,28 @@
+Sensors:
+1)LDR
+2) IR xmit, rcv
+3) PIR
+4) LM 35
+5) RF NRF 24l01
+
+GSN- Sim 900 Kit
+
+students: 1) Accelerometer, 2) Bluetooth, 3) Gas sensors, 4) RF 
+
+
+Interests
+
+1) Using information from heterogeneous source/sensors i.e., acoustic, inertial and visual 
+-- Speech(NLP) and VIsual
+-- gesture
+
+2) Making interpretable decisions
+
+3) Memory constrained networks
+
+1. Your research experience and interest in robotics/learning/AI/perception.
+2. Why grad school -- career plans? What after grad school? Why a PhD and not just an MS?
+3. Your expectations from pursuing robotics research, and from the research group you want to be a part of (mine in this case).
+4. My (group's) research goals and directions -- past, present and future;
+5. My expectations of a grad student working with me, and my responsibilities for them.
+

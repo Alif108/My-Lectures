@@ -1,0 +1,7 @@
+
+I am particularly interested to work with Prof. Jaijeet Roychowdhury in his project ABCD. I found the use of supervised machine learning approach to learn Finite State Machine abstractions of continuous domain dynamical systems in DAE2FSM very intriguing. This project provide unique opportunities to work on novel machine learning algorithms. I believe my expereince in ML to solve a wide variety of problems strongly matches with this project. I also find the works of Prof. Kurt Keutzer on desginining neural nets for embedded systems interesting. I believe applying local search techniques, with well curated operators and a constrained cost function, on pretrained large networks can reduce the model size while retaining expected accuracy. I am also deeply motivated by the works of Prof. Marti A. Hearst on her works on NLP and Education.  
+
+Genetic algorithms have seen an uprising on learning the hyperparameters of the deep neural networks lately. Memetic algorithms can reduce the model size too. 
+
+
+ 

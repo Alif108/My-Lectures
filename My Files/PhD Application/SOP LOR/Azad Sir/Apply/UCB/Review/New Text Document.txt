@@ -1,0 +1,25 @@
+AMS design -- ( modelling, analysis, simulation, verification, testing, and debugging of AMS designs)
+
+
+Gaps 
+system wide simulation, ? 
+hieararchical system modelling ?
+major challenges and bottleneck in chip design
+	-- AMS debugging 
+	-- AMS testing
+
+other representation except FSM, boolean models -> Language?
+
+--- RNNs 
+--- PDAs or Turing Machines ??
+
+--- Modeling parasitic components (only in board level design)
+
+--- modelling and analysis 
+accuracy vs. amenability to analyze
+accuracy vs. speed
+
+--- In particular, read through ABCD-NL (Chapter 6), together with relevant previous background needed (eg, differential equation models and their simulation - use the attached monograph as necessary)
+--- Try to make your own coherent mental picture of it, noting any gaps or questions that are not resolved yet.
+--- Explain this mental picture in a short write-up (not much more than 2-3 pages), written in latex (using vim on linux).
+--- It would be good if you would send me the write-up (including the latex source) in about a week from now (but let me know if you need more time).

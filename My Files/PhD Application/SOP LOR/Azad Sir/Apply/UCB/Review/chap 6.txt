@@ -1,0 +1,9 @@
+ABCD-NL works well for accurately Booleanizing a large class of genuinely non-linear analog and mixed-signal systems. As with DAE2FSM and ABCD-L, the Boolean models produced by ABCD-NL can be used for high-speed simulation and formal verification. 
+
+ABCD-NL takes a SPICE netlist as input, and it produces as output a purely Boolean model (an FSM)
+
+each discretized combination of the circuit’s inputs is associated with a DC state in the FSM
+
+
+
+

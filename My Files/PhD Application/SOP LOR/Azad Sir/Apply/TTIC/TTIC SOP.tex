@@ -1,0 +1,126 @@
+%
+% Please use latex to format this document.
+%
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{fancyhdr}
+\usepackage{comment}
+\usepackage{hyperref}
+
+\usepackage[paper=letterpaper,
+%includefoot, % Uncomment to put page number above margin
+marginparwidth=1.2in,     % Length of section titles
+marginparsep=.05in,       % Space between titles and text
+margin=1in,
+top=1.5in,
+bmargin=1.0in,               % 1 inch margins
+includemp]{geometry}
+
+
+\marginparwidth 0pt
+\oddsidemargin  0pt
+\evensidemargin  0pt
+\marginparsep 0pt
+
+%\topmargin   -20pt
+
+\textwidth   6.5 in
+%\textheight  9 in
+
+\pagestyle{fancy}
+
+
+%\renewcommand{\baselinestretch}{2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Double spacing                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\renewcommand{\baselinestretch}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%*************Declaration Section******************
+\newcommand{\Z}{\bf{Z}}
+\newcommand{\Q}{\bf{Q}}
+\newcommand{\R}{\bf{R}}
+\newcommand{\C}{\bf{C}}
+\newcommand{\F}{\bf{F}}
+\newcommand{\T}{\bf{T}}
+\newcommand{\J}{\bf{J}}
+\newcommand{\PP}{\bf{P}}
+\newcommand{\RP}{{\noindent \bf Research problems:}}
+\newcommand{\B}{{\noindent $\bullet$ \ }}
+%\newcommand{\HH}{\rm{H}}
+%\newcommand{\SS}{\rm{S}}
+%\newcommand{\LL}{\rm{L}}
+\newcommand{\Mid}{\mid\!\!}
+\newcommand{\miD}{\!\!\mid}
+\newcommand{\tensor}{\otimes}
+\newcommand{\ra}{\rightarrow}
+\font\cyr=wncyr10
+\newcommand{\Sha}{\hbox{\cyr X}}
+\newtheorem{lem}{Lemma}[section]
+\newtheorem{cor}[lem]{Corollary}
+\newtheorem{prop}[lem]{Proposition}
+\newtheorem{conj}[lem]{Conjecture}
+\newtheorem{thm}[lem]{Theorem}
+
+
+
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Topmatter                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\fancyhf{}
+%\rhead{User ID: azadsalam@cse.buet.ac.bd}
+\rhead{azadsalam2611@gmail.com}
+\lhead{Abdus Salam Azad}
+\lfoot{Personal Website: \url{https://sites.google.com/view/azadsalam2611}}
+\rfoot{\thepage}
+
+\begin{center}
+{\LARGE \bf 
+Statement of Purpose}\\
+%\vspace{0.1in}
+%{\Large {Program: Ph.D. in Computer Science}}
+% \\ azadsalam@cse.buet.ac.bd
+\end{center}
+
+%\\
+%A
+%\hfill
+%Prof. Whatshisname
+
+%\vspace{-0.15in}
+ 
+I am Abdus Salam Azad. My research interests broadly span the field of Machine Learning (ML). In my undergraduate and Master's thesis, I have worked on Memetic Algorithms. I have also attempted to explore the domain of ML further and its application in relevant fields through several projects, courses, and research collaborations. For my Ph.D, I am particularly interested in developing learning algorithms for Natural Language, Speech, and/or Image Understanding. Hereby I express my interest to pursue my Ph.D at the Toyota Technological Institute at Chicago---a suitable place to pursue research in this area.  
+
+I had my first major research experience during my undergraduate thesis. I worked on Genetic Algorithms(GA) to solve MDPVRP---a lesser studied variant of the well-known Vehicle Routing Problem (VRP), which extends VRP with multiple depots and periods. I was supervised by \href{http://cse.buet.ac.bd/faculty/facdetail.php?id=mdmonirulislam}{Prof. Md. Monirul Islam}, who has been working on GAs for the past 20 years. For GAs to perform well, maintaining the population diversity is very crucial. To keep the population diverse, the existing GA approaches for VRPs incorporate a diversity measure with the solutions' fitness, which can be computationally expensive. Our proposed method aimed at maintaining the population diversity solely by the use of selection operators. We also proposed a new formulation for MDPVRP which allows interdependent operations among depots to provide cheaper solutions at the cost of a bigger search space. Our work was acknowledged as the winner in the yearly thesis poster competition organized by CSE, BUET (1st out of 57 submissions).
+
+In my Master's thesis, I continued my work with Prof. Islam on our proposed MDPVRP formulation. This time, we developed a Memetic Algorithm (MA)---a hybrid GA with a local improvement component. The existing MA methods focus extensively on greediness, which typically leads them to a premature convergence and require additional techniques such as population restart for further progress. Our proposed method introduces a stochastic local improvement component to address this problem. The component focuses simultaneously on both greediness and randomness to maintain the balance between exploration and exploitation, which consequently helps to avoid a premature convergence. We also proposed a heuristic, partly greedy and partly stochastic, to construct the initial solutions. Extensive experiments on the benchmark problems revealed significant improvements over the state-of-the-art methods. This work has been accepted in the \href{http://ieeexplore.ieee.org/document/7835722/}{IEEE Transactions on Cybernetics}. 
+
+I developed a decent understanding of search techniques and constrained combinatorial optimization during my thesis. To get a greater overview and deeper understanding of the topics of AI \& ML, I have taken a number of related courses during my undergrad and Master's, including AI, ML, Pattern Recognition, and Data Mining. I have also participated in MOOCs on ML (Coursera) and Deep Learning (Udacity). To strengthen my foundation in image analysis, I also took the Advanced Image Processing course during my Master's. I learned a number of useful and fundamental techniques, e.g., image enhancement, filtering, segmentation, and compression. I also implemented a paper on content-based image retrieval. My interest towards Natural Language and Image understanding piqued during another Master's projects. I surveyed the literature of bidirectional image-sentence search, searching images with sentence descriptions (and vice versa), and analyzed three of the state-of-the-art methods. I also proposed a two-stage approach that decouples object detection within the images from the inference of their inherent semantic relations.
+
+I am currently working on two research projects: machine/reading comprehension and citation recommendation. In machine comprehension (answering questions based on passages), we have modeled the problem as a path-finding game in a passage graph, where an agent traverses the graph to locate the answer. The graph is constructed from the passage utilizing word embeddings, parse trees, and coreference resolution. The agent will be trained using reinforcement learning. The motivation behind using reinforcement learning is that the learned model will be able to show clear paths on the passage graph which it follows to generate the answer. In the citation recommendation project, the task is to recommend the most relevant works from the literature, given a research idea or, abstract as a query. A paper may cite another paper for a number of different reasons, such as having similarity in the applied methodology, problem definition, and/or datasets. To incorporate such multidimensional similarity we propose a multi-objective optimization based Learning to Rank algorithm. 
+
+I have been working as a Lecturer in the Department of CSE at Bangladesh University of Engineering and Technology (BUET), my alma mater, since my undergraduate studies. I have conducted a number of lab courses including Artificial Intelligence and Machine Learning. I have also conducted the ``Microprocessor and Microcontrollers'' lab course a number of times. As part of this course, students build small-scale systems using ATmega 32 microcontroller. I had the opportunity to supervise and work on a number of exciting systems with a wide variety of applications. This enabled me to work with a wide variety of sensors and actuators, too. During my undergraduate studies, I also built an automatic door using ATmega32 and PIR sensor that implements a color-pattern based dynamic password protection. 
+
+Since my undergraduate studies, I have attempted to explore AI, ML, and relevant fields through my research, courses, and different projects. In my Ph.D., I am interested in designing learning algorithms which can gather knowledge from data, especially from images and/or texts, to solve meaningful problems by utilizing their inherent semantics. There has been a significant advancement in this field, particularly with deep learning approaches. However, there is room for further improvement. The current state-of-the-art supervised deep learning methods need lots of labeled training examples. I would like to design algorithms which can utilize unlabeled or partially labeled data. I am also interested in developing algorithms that solve problem of a particular domain (e.g, text) by utilizing data from another relevant domain (e.g., video) as auxiliary supervision.
+
+I consider the Toyota Technological Institute at Chicago (TTIC) a suitable place to pursue my Ph.D. TTIC provides an excellent environment for cutting-edge research with top-notch research facilities and many brilliant faculty members. I believe an opportunity to pursue my Ph.D. at TTIC will enable me to conduct impactful research and help me to advance towards a research-oriented career in academia.
+%I am particularly interested to work at the Robot Intelligence through Perception Lab (RIPL) with Prof. Matthew R. Walter. I also find the works of Prof. David McAllester and Prof. Karen Livescu interesting. I am also open to working with others working on machine learning algorithms. 
+
+%Prof. Zhu's work on persistent homology including its application for a new representation of text is also intriguing. 
+
+% %The idea of machine teaching seems very intriguing to me. I would also like to explore the use of Machine Teaching techniques for machine learning algorithms. For example, we can speed up the training by selecting batches intelligently. By machine teaching techniques, we find the representative subset of training examples for the current state of the model, and emphasize on other examples from the training set for the next batch to facilitate generalization---a concept similar to Boosting for Ensemble Learning. 
+
+\end{document}
+
+

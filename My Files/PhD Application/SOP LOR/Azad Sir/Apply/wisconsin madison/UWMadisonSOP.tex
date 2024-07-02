@@ -1,0 +1,125 @@
+%
+% Please use latex to format this document.
+%
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{fancyhdr}
+\usepackage{comment}
+\usepackage{hyperref}
+
+\usepackage[paper=letterpaper,
+%includefoot, % Uncomment to put page number above margin
+marginparwidth=1.2in,     % Length of section titles
+marginparsep=.05in,       % Space between titles and text
+margin=1in,
+top=1.3in,
+bmargin=0.9in,               % 1 inch margins
+includemp]{geometry}
+
+
+\marginparwidth 0pt
+\oddsidemargin  0pt
+\evensidemargin  0pt
+\marginparsep 0pt
+
+%\topmargin   -20pt
+
+\textwidth   6.5 in
+%\textheight  9 in
+
+\pagestyle{fancy}
+
+
+%\renewcommand{\baselinestretch}{2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Double spacing                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\renewcommand{\baselinestretch}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%*************Declaration Section******************
+\newcommand{\Z}{\bf{Z}}
+\newcommand{\Q}{\bf{Q}}
+\newcommand{\R}{\bf{R}}
+\newcommand{\C}{\bf{C}}
+\newcommand{\F}{\bf{F}}
+\newcommand{\T}{\bf{T}}
+\newcommand{\J}{\bf{J}}
+\newcommand{\PP}{\bf{P}}
+\newcommand{\RP}{{\noindent \bf Research problems:}}
+\newcommand{\B}{{\noindent $\bullet$ \ }}
+%\newcommand{\HH}{\rm{H}}
+%\newcommand{\SS}{\rm{S}}
+%\newcommand{\LL}{\rm{L}}
+\newcommand{\Mid}{\mid\!\!}
+\newcommand{\miD}{\!\!\mid}
+\newcommand{\tensor}{\otimes}
+\newcommand{\ra}{\rightarrow}
+\font\cyr=wncyr10
+\newcommand{\Sha}{\hbox{\cyr X}}
+\newtheorem{lem}{Lemma}[section]
+\newtheorem{cor}[lem]{Corollary}
+\newtheorem{prop}[lem]{Proposition}
+\newtheorem{conj}[lem]{Conjecture}
+\newtheorem{thm}[lem]{Theorem}
+
+
+
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Topmatter                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\fancyhf{}
+%\rhead{User ID: azadsalam@cse.buet.ac.bd}
+\rhead{azadsalam2611@gmail.com}
+\lhead{Abdus Salam Azad}
+\lfoot{Personal Website: \url{https://sites.google.com/view/azadsalam2611}}
+\rfoot{\thepage}
+
+\begin{center}
+{\LARGE \bf 
+Statement of Purpose}\\
+%\vspace{0.1in}
+%{\Large {Program: Ph.D. in Computer Science}}
+% \\ azadsalam@cse.buet.ac.bd
+\end{center}
+
+%\\
+%A
+%\hfill
+%Prof. Whatshisname
+
+%\vspace{-0.15in}
+
+I am Abdus Salam Azad. My research interests broadly span the field of Machine Learning (ML). In my undergraduate and Master's thesis, I have worked on Memetic Algorithms. I have also attempted to explore the domain of ML further and its application in relevant fields through several courses, projects, and research collaborations. For my PhD, I am interested in developing novel machine learning algorithms with application in different fields of computer science, such as natural language processing, data-science, and vision. Particularly I want to design interpretable learning algorithms. I am also interested to work in new prospective paradigms of ML and Artificial Intelligence (AI). Hereby I express my interest to pursue my PhD at the Department of Computer Sciences at the University of Wisconsin-Madison (UW-Madison)---a suitable place to pursue research in this area. I would also like to mention that, I received an admission offer from your prestigious department for Fall 2017 (Campus ID Number: 9077501303). However, due to some unavoidable circumstances, I could not avail the opportunity. 
+
+I had my first major research experience during my undergraduate thesis. I worked on Genetic Algorithms(GA) to solve MDPVRP---a lesser studied variant of the well-known Vehicle Routing Problem (VRP), which extends VRP with multiple depots and periods. I was supervised by \href{http://cse.buet.ac.bd/faculty/facdetail.php?id=mdmonirulislam}{Prof. Md. Monirul Islam}, who has been working on GAs for the past 20 years. For GAs to perform well, maintaining the population diversity is very crucial. To keep the population diverse, the existing GA approaches for VRPs incorporate a diversity measure with the solutions' fitness, which can be computationally expensive. Our proposed method aimed at maintaining the population diversity solely by the use of selection operators. We also proposed a new formulation for MDPVRP which allows interdependent operations among depots to provide cheaper solutions at the cost of a bigger search space. Our work was acknowledged as the winner in the yearly thesis poster competition organized by CSE, BUET (1st out of 57 submissions).
+
+In my Master's thesis, I continued my work with Prof. Islam on our proposed MDPVRP formulation. This time, we developed a Memetic Algorithm (MA)---a hybrid GA with a local improvement component. The existing MA methods focus extensively on greediness, which typically leads them to a premature convergence and require additional techniques such as population restart for further progress. Our proposed method introduces a stochastic local improvement component to address this problem. The component focuses simultaneously on both greediness and randomness to maintain the balance between exploration and exploitation, which consequently helps to avoid a premature convergence. We also proposed a heuristic, partly greedy and partly stochastic, to construct the initial solutions. Extensive experiments on the benchmark problems revealed significant improvements over the state-of-the-art methods. This work has been accepted in the \href{http://ieeexplore.ieee.org/document/7835722/}{IEEE Transactions on Cybernetics}. 
+
+
+I developed a decent understanding of search techniques and constrained combinatorial optimization during my thesis. To get a greater overview and deeper understanding of the topics of AI \& ML, I have taken a number of related courses and MOOCs during my undergrad and Master's. These courses have also provided me with opportunities to work on learning algorithms for different interesting problems. In one of my Master's courses, I surveyed the literature of bidirectional image-sentence search, searching images with sentence descriptions (and vice versa), and analyzed three of the state-of-the-art methods. I also proposed a two-stage deep learning approach that unlike the previous methods decouples object detection within the images from the inference of their inherent semantic relations. Currently, I am working on a core problem related to natural language understanding---machine/reading comprehension i.e., answering questions based on passages. In this project, we represent the passages as a graph and we model the problem as a path-finding game in this graph, where an agent traverses it to locate the correct answer. The graph is constructed from the passage utilizing word embeddings, parse trees, and coreference resolution. I am working on reinforcement learning to train the agent. The motivation behind using reinforcement learning is that the learned model will be able to show clear paths on the passage graph which it follows to generate the answer, making the model interpretable. For my future research, I want to continue on developing learning algorithms for such exciting problems.   
+
+
+I consider the Department of Computer Sciences at the University of Wisconsin-Madison (UW-Madison) one of the most suitable places for conducting research in the field of Machine Learning. UW-Madison provides an excellent environment for cutting-edge research with top-notch research facilities and extraordinary faculty members. I am particularly interested to work with Prof. Xiaojin Zhu on machine teaching---selecting an optimal training set for an already known target model. Selecting such a training set requires combinatorial search, on which I have worked in my undergraduate and Master's thesis. I would also like to explore the use of machine teaching techniques for machine learning algorithms. For example, we can speed up the training of batch learners by selecting batches intelligently. Using machine teaching techniques, we find the representative subset of training examples for the current state of the model and emphasize on other examples from the training set for the next batch to facilitate generalization. 
+
+In this line, I found the recent work ``Training Set Debugging Using Trusted Items'' of Prof. Stephen J. Wright and Prof. Zhu interesting. This work discovers potentially noisy examples from the training examples using a small trusted subset of the training set. The algorithm has been modeled as an optimization algorithm. I have worked on combinatorial optimization during my thesis. Hence this work and also the overall research direction of Prof. Stephen J. Wright align with my background. His works on optimization and its application in areas such as image and natural language processing and machine learning are very motivating.  
+
+I am also interested to work with Prof. Jignesh M. Patel on his project AVA---a chatbot that can interact with data scientists to help them build data science workflows. Multiple future directions of this project relate to my previous works. During my thesis, I have worked on search methods which can be utilized to select/suggest best possible combination of data preprocessing techniques, features, and models. To allow less-constrained text interaction, AVA also requires a better understanding of natural language, which relates to my projects: sentence-image bidirectional search and machine comprehension.  I am also open to working with others who have interest in machine learning and its application in vision, NLP, and other real-world problems. I believe an opportunity to pursue my Ph.D. in the prestigious Department of Computer Sciences at UW-Madison will enable me to conduct impactful research to advance towards a research-oriented career in academia. 
+
+%Prof. Zhu's work on persistent homology including its application for a new representation of text is also intriguing. 
+
+% %The idea of machine teaching seems very intriguing to me. I would also like to explore the use of Machine Teaching techniques for machine learning algorithms. For example, we can speed up the training by selecting batches intelligently. By machine teaching techniques, we find the representative subset of training examples for the current state of the model, and emphasize on other examples from the training set for the next batch to facilitate generalization---a concept similar to Boosting for Ensemble Learning. 
+
+\end{document}
+
+
